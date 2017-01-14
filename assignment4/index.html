@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+<head>
+	<title>A master/detail view pair</title>
+	<style type="text/css">
+		.loading-icon {
+		  position: absolute;
+		  left: 50%;
+		  top: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<ui-view></ui-view>
+
+<loading-spinner></loading-spinner>
+
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="js_src/menuapp.module.js"></script>
+<script type="text/javascript" src="js_src/data.module.js"></script>
+<script type="text/javascript" src="js_src/spinner.module.js"></script>
+
+<script type="text/javascript" src="js_src/router.js"></script>
+<script type="text/javascript" src="js_src/spinner.component.js"></script>
+<script type="text/javascript" src="js_src/menudata.service.js"></script>
+<script type="text/javascript" src="js_src/menuapp.component.js"></script>
+<script type="text/javascript" src="js_src/menuapp.controller.js"></script>
+</body>
+</html>
