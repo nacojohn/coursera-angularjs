@@ -28,6 +28,8 @@ function SpinnerController($rootScope) {
 
     cancel = $rootScope.$on('$stateChangeError',
     function(event, toState, toParams, fromState, fromParams, error){
+      console.log(error)
+      event.preventDefault();
       $ctrl.showSpinner = false;
     });
     cancellers.push(cancel);
